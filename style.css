@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: Arial, sans-serif;
+
+    background: linear-gradient(
+        135deg,
+        #240046,
+        #3a0ca3,
+        #4361ee
+    );
+
+    color: white;
+}
+
+
+/* Main container */
+
+.stopwatch-container {
+    width: 90%;
+    max-width: 600px;
+
+    padding: 45px 35px;
+
+    text-align: center;
+
+    background: rgba(255, 255, 255, 0.12);
+
+    border-radius: 20px;
+
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+
+    backdrop-filter: blur(10px);
+}
+
+
+/* Heading */
+
+h1 {
+    font-size: 40px;
+
+    margin-bottom: 30px;
+
+    letter-spacing: 3px;
+}
+
+
+/* Stopwatch display */
+
+.display {
+    font-size: 55px;
+
+    font-weight: bold;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 35px;
+}
+
+
+/* Buttons */
+
+.buttons {
+    display: flex;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 15px;
+}
+
+button {
+    padding: 12px 25px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+/* Button hover */
+
+button:hover {
+    transform: translateY(-3px);
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+
+/* Lap section */
+
+.laps {
+    margin-top: 40px;
+}
+
+.laps h2 {
+    margin-bottom: 15px;
+}
+
+#lapList {
+    list-style: none;
+
+    max-height: 200px;
+
+    overflow-y: auto;
+}
+
+#lapList li {
+    padding: 10px;
+
+    margin: 8px 0;
+
+    background: rgba(255, 255, 255, 0.15);
+
+    border-radius: 6px;
+
+    font-size: 18px;
+}
+
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+    .stopwatch-container {
+        padding: 35px 20px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    .display {
+        font-size: 35px;
+    }
+
+    button {
+        padding: 10px 18px;
+    }
+}
